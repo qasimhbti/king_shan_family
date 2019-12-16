@@ -1,0 +1,218 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+//King Shan(gender: m, id: 2, parentID: 1) - Queen Anga(gender: f, id: 2, parentID: 1)    //
+//	                                                                                      // 
+//	Ish(gender: m, id: 3, parentID: 2)                                                    //
+//                                                                                        //
+//	Chit(gender: m, id: 4, parentID: 2) - Ambi(gender: f, id: 4, parentID: 0)	          //
+//		Drita(gender: m, id: 7, parentID: 4) - Jaya(gender: f, id: 7, parentID: 0)        //
+//			Jata(gender: m, id: 14, parentID: 7)                                          //
+//			Driya(gender: f, id: 15, parentID: 7) - Mnu(gender: m, id: 15, parentID: 0)   //
+//		Vrita(gender: m, id: 8, parentID: 4)                                              //
+//                                                                                        //
+//	Vich(gender: m, id: 5, parentID: 2) - Lika(gender: f, id: 5, parentID: 0)             //
+//		Vila(gender: m, id: 9, parentID: 5) - Jnki(gender: f, id: 9, parentID: 0)         //
+//			Lavnya(gender: f, id: 16, parentID: 3) - Gru(gender: m, id: 4, parentID: 0)   //
+//		Chika(gender: f, id: 10, parentID: 5) - Kpila(gender: m, id: 9, parentID: 0)      //
+//                                                                                        //
+//	Satya(gender: f, id: 6, parentID: 2) - Vyan(gender: m, id: 6, parentID: 0)            //
+//		Satvy(gender: f, id: 11, parentID: 6) - Asva(gender: f, id: 11, parentID: 0)      //
+//		Savya(gender: m, id: 12, parentID: 6) - Krpi(gender: f, id: 12, parentID: 0)      //
+//			Kriya(gender: m, id: 17, parentID: 12)                                        //
+//		Saayan(gender: m, id: 13, parentID: 6) - Mina(gender: m, id: 13, parentID: 0)     //
+//			Misa(gender: m, id: 18, parentID: 13)                                         //
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+{
+    "id": 2,
+    "parentID": 1,
+    "name": "KingShan",
+    "gender": "m",
+    "spouse": {
+        "name": "QueenAnga",
+        "gender": "f",
+        "id": 2,
+        "parentID": 0
+    },
+    "children": [
+        {
+            "id": 3,
+            "parentID": 2,            
+            "name": "Ish",
+            "gender": "m",
+            "spouse": {}
+        },
+        {
+            "id": 4,
+            "parentID": 2,
+            "name": "Chit",
+            "gender": "m",
+            "spouse": {
+                "id": 4,
+                "parentID": 0,
+                "name": "Ambi",
+                "gender": "f",
+            },
+            "children": [
+                {
+                    "id": 7,
+                    "parentID": 4,
+                    "name": "Drita",
+                    "gender": "m",
+                    "spouse": {
+                        "id": 7,
+                        "parentID": 0,
+                        "name": "Jaya",
+                        "gender": "f",
+                    },
+                    "children": [
+                        {
+                            "id": 14,
+                            "parentID": 7,
+                            "name": "Jata",
+                            "gender": "m",
+                            "spouse": {}
+                        },
+                        {
+                            "id": 15,
+                            "parentID": 7,
+                            "name": "Driya",
+                            "gender": "f",
+                            "spouse": {
+                                "id": 15,
+                                "parentID": 0,
+                                "name": "Mnu",
+                                "gender": "m",
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "parentID": 4,
+                    "name": "Vrita",
+                    "gender": "m",
+                    "spouse": {}
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "parentID": 2,
+            "name": "Vich",
+            "gender": "m",
+            "spouse": {
+                "id": 5,
+                "parentID": 0,
+                "name": "Lika",
+                "gender": "f"
+            },
+            "children": [
+                {
+                    "id": 9,
+                    "parentID": 5,
+                    "name": "Vila",
+                    "gender": "m",
+                    "spouse": {
+                        "id": 9,
+                        "parentID": 0,
+                        "name": "Jnki",
+                        "gender": "f"
+                    },
+                    "children": [
+                        {
+                            "id": 16,
+                            "parentID": 9,
+                            "name": "Lavnya",
+                            "gender": "f",
+                            "spouse": {
+                                "id": 16,
+                                "parentID": 0,
+                                "name": "Gru",
+                                "gender": "m"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "parentID": 5,
+                    "name": "Chika",
+                    "gender": "f",
+                    "spouse": {
+                        "id": 10,
+                        "parentID": 0,
+                        "name": "Kpila",
+                        "gender": "m"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "paretnID": 2,
+            "name": "Satya",
+            "gender": "f",
+            "spouse": {
+                "id": 6,
+                "parentID": 0,
+                "name": "Vyan",
+                "gender": "m"
+            },
+            "children": [
+                {
+                    "id": 11,
+                    "parentID": 6,
+                    "name": "Satvy",
+                    "gender": "f",
+                    "spouse": {
+                        "id": 11,
+                        "parentID": 0,
+                        "name": "Asva",
+                        "gender": "m"
+                    }
+                },
+                {
+                    "id": 12,
+                    "parentID": 6,
+                    "name": "Savya",
+                    "gender": "m",
+                    "spouse": {
+                        "id": 12,
+                        "parentID": 0,
+                        "name": "Krpi",
+                        "gender": "f"
+                    },
+                    "children": [
+                        {
+                            "id": 17,
+                            "parentID": 12,
+                            "name": "Kriya",
+                            "gender": "m"
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "parentID": 6,
+                    "name": "Saayan",
+                    "gender": "m",
+                    "spouse": {
+                        "id": 13,
+                        "parentID": 0,
+                        "name": "Mina",
+                        "gender": "f"
+                    },
+                    "children": [
+                        {
+                            "id": 18,
+                            "parentID": 13,
+                            "name": "Misa",
+                            "gender": "m"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
